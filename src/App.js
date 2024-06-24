@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Modal from './components/page'
+import Modal from './components/index'
+// import Header from './components/header'
 // import AboutTeam from './components/about-team'
 // import Component from './components/pricing-sections/pricing-sections-8'
  
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Modal/>
+      {/* <Header/> */}
       
       {/* <Component/> */}
       <header className="App-header">
