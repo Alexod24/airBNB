@@ -36,7 +36,7 @@ const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const navigation = {
   categories: [
     {
-      name: 'Women',
+      name: 'Habitaciones',
       featured: [
         { name: 'Sleep', href: '#' },
         { name: 'Swimwear', href: '#' },
@@ -64,7 +64,7 @@ const navigation = {
       ],
     },
     {
-      name: 'Men',
+      name: 'Vistas Increibles',
       featured: [
         { name: 'Casual', href: '#' },
         { name: 'Boxers', href: '#' },
@@ -93,16 +93,58 @@ const navigation = {
     },
   ],
   pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
+    { name: 'Articulos alquilables', href: '#' },
+    { name: 'Iconicos ', href: '#' },
   ],
 }
 const offers = [
-  { name: 'Download the app', description: 'Get an exclusive $5 off code', href: '#' },
-  { name: "Return when you're ready", description: '60 days of free returns', href: '#' },
-  { name: 'Sign up for our newsletter', description: '15% off your first order', href: '#' },
+  { name: "¿Tienes un espacio por alquilar?", description: 'Rellena el formulario y recibe ingresos', href: '#' },
+  { name: 'Descargar la app y', description: 'Recibe un 5% de descuento', href: '#' },
+  { name: "¿Tienes un articulo por alquilar?", description: 'Rellena el formulario y recibe ingresos', href: '#' },
 ]
 const trendingProducts = [
+  {
+    id: 1,
+    name: 'Machined Pen',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#FDE68A' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+  {
+    id: 1,
+    name: 'Machined Pen',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#FDE68A' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+  {
+    id: 1,
+    name: 'Machined Pen',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#FDE68A' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
   {
     id: 1,
     name: 'Machined Pen',
@@ -339,12 +381,12 @@ export default function Example() {
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
                 <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                  Create an account
+                  Crea una cuenta
                 </a>
               </div>
               <div className="flow-root">
                 <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                  Sign in
+                  Iniciar Sesion
                 </a>
               </div>
             </div>
@@ -406,7 +448,7 @@ export default function Example() {
               </form>
 
               <p className="flex-1 text-center text-sm font-medium text-white lg:flex-none">
-                Get free delivery on orders over $100
+                Si resides en Huancayo recibe un recorrido gratis en LaBaseCowork
               </p>
 
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
@@ -702,7 +744,7 @@ export default function Example() {
           <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8 lg:py-32">
             <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
               <h2 id="trending-heading" className="text-2xl font-bold tracking-tight text-gray-900">
-                Trending products
+                Productos para alquilar
               </h2>
               <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
                 See everything
